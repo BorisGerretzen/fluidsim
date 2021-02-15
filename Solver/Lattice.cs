@@ -98,7 +98,7 @@ namespace SolverLib {
                     }
                 }
             }
-            OldGrids.Add(grid);
+            // OldGrids.Add(grid);
             grid = newGrid;
         }
 

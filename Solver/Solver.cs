@@ -27,11 +27,11 @@ namespace SolverLib
 
         public void Do(int n) {
             for (int i = 0; i < n; i++) {
-                Console.WriteLine(i);
+                // Console.WriteLine(i);
                 lattice.Flow();
                 lattice.Collide(1 / (3 * viscosity + 0.5));
             }
-            lattice.ToImages();
+            // lattice.ToImages();
         }
     }
 }

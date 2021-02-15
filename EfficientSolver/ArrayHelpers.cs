@@ -19,6 +19,19 @@ namespace EfficientSolver {
             return arr;
         }
 
+        public static T[,] Make2DArray<T>(this T[] input, int height, int width)
+        {
+            T[,] output = new T[width, height];
+            for (int i = 0; i < width; i++)
+            {
+                for (int j = 0; j < height; j++)
+                {
+                    output[i, j] = input[i * height + j];
+                }
+            }
+            return output;
+        }
+
         public static double[,] Shift(this double[,] arr, (int, int) steps) {
             int sizeX = arr.GetLength(0);
             int sizeY = arr.GetLength(1);
